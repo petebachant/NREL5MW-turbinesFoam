@@ -66,45 +66,45 @@ turbine1
                 nElements   17;
                 elementProfiles
                 (
-// original
-					circular050
-					circular035
-					DU99W405LM
-					DU99W350LM
-					DU99W350LM
-					DU97W300LM
-					DU91W2250LM
-					DU91W2250LM
-					DU93W210LM
-					DU93W210LM
-					NACA64618
-					NACA64618
-					NACA64618
-					NACA64618
-					NACA64618
-					NACA64618
-					NACA64618
+                    // original
+                    circular050
+                    circular035
+                    DU99W405LM
+                    DU99W350LM
+                    DU99W350LM
+                    DU97W300LM
+                    DU91W2250LM
+                    DU91W2250LM
+                    DU93W210LM
+                    DU93W210LM
+                    NACA64618
+                    NACA64618
+                    NACA64618
+                    NACA64618
+                    NACA64618
+                    NACA64618
+                    NACA64618
                 );
                 elementData
-                ( // axialDistance, radius, azimuth, chord, chordMount, pitch
-				(	0	1.5		0	3.2		0.25	13.08	)	//1
-				(	0	6.965	0	4.0085	0.25	13.08	)
-				(	0	10.04	0	4.3585	0.25	13.08	)
-				(	0	13.8	0	4.601	0.25	12.28	)
-				(	0	17.9	0	4.555	0.25	10.82	)
-				(	0	22	    0	4.3535	0.25	9.5855	)
-				(	0	26.1	0	4.128	0.25	8.403	)
-				(	0	30.2	0	3.8775	0.25	7.1695	)
-				(	0	34.3	0	3.625	0.25	5.9525	)
-				(	0	38.4	0	3.379	0.25	4.7745	)	//10
-				(	0	42.5	0	3.133	0.25	3.6565	)
-				(	0	46.6	0	2.887	0.25	2.722	)
-				(	0	50.7	0	2.641	0.25	1.9225	)
-				(	0	54.46	0	2.4155	0.25	1.1945	)
-				(	0	57.535	0	2.1995	0.25	0.6165	)
-				(	0	60.265	0	1.743	0.25	0.265	)
-				(	0	62.315	0	1.05	0.25	0.08	)
-				(	0	63	    0	0.7	    0.25	0	    )	//18
+                ( // axialDistance, radius, azimuth, chord, chordMount, twist
+                    (	0	1.5		0	3.2		0.25	13.08	)	//1
+                    (	0	6.965	0	4.0085	0.25	13.08	)
+                    (	0	10.04	0	4.3585	0.25	13.08	)
+                    (	0	13.8	0	4.601	0.25	12.28	)
+                    (	0	17.9	0	4.555	0.25	10.82	)
+                    (	0	22	    0	4.3535	0.25	9.5855	)
+                    (	0	26.1	0	4.128	0.25	8.403	)
+                    (	0	30.2	0	3.8775	0.25	7.1695	)
+                    (	0	34.3	0	3.625	0.25	5.9525	)
+                    (	0	38.4	0	3.379	0.25	4.7745	)	//10
+                    (	0	42.5	0	3.133	0.25	3.6565	)
+                    (	0	46.6	0	2.887	0.25	2.722	)
+                    (	0	50.7	0	2.641	0.25	1.9225	)
+                    (	0	54.46	0	2.4155	0.25	1.1945	)
+                    (	0	57.535	0	2.1995	0.25	0.6165	)
+                    (	0	60.265	0	1.743	0.25	0.265	)
+                    (	0	62.315	0	1.05	0.25	0.08	)
+                    (	0	63	    0	0.7	    0.25	0	    )	//18
                 );
             }
             blade2
@@ -146,9 +146,8 @@ turbine1
 
         profileData
         {
+            // profile names : DU99W405LM DU99W350LM DU97W300LM DU91W2250LM DU93W210LM NACA64618 circular050 circular035 cylinder
 
-			// profile names : DU99W405LM DU99W350LM DU97W300LM DU91W2250LM DU93W210LM NACA64618 circular050 circular035 cylinder
- 
             DU99W405LM
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -170,7 +169,7 @@ turbine1
                     #include "../matlabOutput/DU99W405LM_multiRe_cd.dat"
                 );
             }
- 
+
             DU99W350LM
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -192,7 +191,7 @@ turbine1
                     #include "../matlabOutput/DU99W350LM_multiRe_cd.dat"
                 );
             }
- 
+
             DU97W300LM
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -214,7 +213,7 @@ turbine1
                     #include "../matlabOutput/DU97W300LM_multiRe_cd.dat"
                 );
             }
- 
+
             DU91W2250LM
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -236,7 +235,7 @@ turbine1
                     #include "../matlabOutput/DU91W2250LM_multiRe_cd.dat"
                 );
             }
- 
+
             DU93W210LM
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -258,7 +257,7 @@ turbine1
                     #include "../matlabOutput/DU93W210LM_multiRe_cd.dat"
                 );
             }
- 
+
             NACA64618
             {
                 tableType   multiRe; // singleRe (default) || multiRe
@@ -281,16 +280,16 @@ turbine1
                 );
             }
 
-//////////////////////////////////////////
-
             circular050
             {
-                data ((-180 0 .50)(180 0 .50));
+                data ((-180 0 0.50)(180 0 0.50));
             }
+
             circular035
             {
-                data ((-180 0 .35)(180 0 .35));
+                data ((-180 0 0.35)(180 0 0.35));
             }
+
             cylinder
             {
                 data ((-180 0 1.1)(180 0 1.1));
