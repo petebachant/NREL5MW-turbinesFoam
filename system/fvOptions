@@ -32,7 +32,7 @@ turbine1
         freeStreamVelocity  (11.4 0 0);
         tipSpeedRatio       7.0;
         rotorRadius         63.0;
-        ReScale             1.3;
+        ReScale             0.52;
 
         dynamicStall
         {
